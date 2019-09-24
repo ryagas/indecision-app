@@ -1,11 +1,7 @@
-import isSenior, { isAdult, canDrink } from './person.js';
-// import './utils.js';
-// import subtract, { square, add } from './utils.js';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import IndecisionApp from './components/IndecisionApp';
+import 'normalize.css/normalize.css';
+import './styles/styles.scss';
 
-// console.log('app.js is running');
-// console.log(square(4));
-// console.log(subtract(100, 23));
-
-console.log(isAdult(21));
-console.log(canDrink(21));
-console.log(isSenior(64));
+ReactDOM.render(<IndecisionApp />, document.getElementById('app'));
